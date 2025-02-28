@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="index.js">
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/04fd729015.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,7 +21,6 @@
                         <li><a class="nav__link" href="#">Contact</a></li>
                         <li><a class="nav__link nav__link--primary" href="#">Books</a></li>
                     </ul>
-                </div>
                 <button class="btn__menu" onclick="openMenu()">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -31,15 +30,16 @@
                     </button>
                     <ul class="menu__links">
                         <li class="menu__list">
-                            <a href="#" class="menu__link">Home</a>
+                            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
                         </li>
                         <li class="menu__list">
-                            <a href="#features" class="menu__link">Books</a>
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
                         </li>
                         <li class="menu__list">
-                            <a href="menu__link no-cursor" class="menu__link">Contact</a>
+                            <a href="menu__link no-cursor" class="menu__link" onclick="closeMenu()">Contact</a>
                         </li>
                     </ul>
+                </div>
                 </div>
             </nav>
             <header>
